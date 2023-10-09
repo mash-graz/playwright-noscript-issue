@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>noscript test</title>
+    </head>
+    <body>
+        <h1>Demonstration of a <code>noscript</code> issue</h1>
+
+        <p>Here you should see a visual reminder, if JS was dissabled
+        durring this Test:</p>
+
+        <noscript><b id="id1">JS Disabled (1)</b></noscript>
+
+        <p>(Unfortunatly you will never <b>see</b> the message 
+            in playwrigths ui-viewer because of a bug!)</p>
+
+        <p>Just to check, if NoScript emulation works at all
+        in playwright, we generate here the correct output 
+        by other means:</p>
+
+        <b id="id2">JS Disabled (2)</b>
+        <script>document.getElementById("id2").hidden = true;</script>
+    </body>
+</html>
